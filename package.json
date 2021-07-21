@@ -5,7 +5,7 @@
     "main": "index.js",
     "private": true,
     "scripts": {
-        "star": "webpack-dashboard -- webpack-dev-server --config dev.config.js",
+        "start": " webpack serve --config dev.config.js",
         "build": "webpack",
         "serve": "webpack serve"
     },
@@ -31,6 +31,7 @@
         "webpack": "^5.45.1",
         "webpack-cli": "^4.7.2",
         "webpack-dashboard": "^3.3.5",
+        "webpack-dev-server": "^3.11.2",
         "webpack-merge": "^5.8.0"
     }
 }
