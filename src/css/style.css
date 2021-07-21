@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #cfbaba;
+}
+
+header {
+    background-color: #cfbaba;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    width: 99%;
+
+    color: aliceblue;
+}
+
+main {
+    width: 95vw;
+    height: 75vh;
+    margin: auto;
+    margin-top: 8em;
+
+    border-radius: 2em;
+    border: solid aliceblue;
+    background-color: aliceblue;
+    box-shadow: 0 0 0.8em;
+}
+
+main p {
+    text-align: center;
+    margin: auto;
+    height: 80%;
+    padding: 1em;
+    color: #723636;
+    font-weight: bolder;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #cfbaba;
+
+    color: aliceblue;
+}
+
+a {
+    color: aliceblue;
+}
