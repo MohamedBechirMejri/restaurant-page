@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/MohamedBechirMejri/restaurant-page#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
