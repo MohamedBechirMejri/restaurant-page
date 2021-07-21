@@ -9,14 +9,15 @@ export const generateHomepage = () => {
                     <a href="#contact-us">Contact US</a>
                 </nav>
             </header>
-
+        <main>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
                 accusantium quo eaque assumenda voluptates quam accusamus nemo quia aut
                 non, molestias eum omnis illo error ducimus sapiente maiores aliquid.
                 Vero.
-            </p>
 
+            </p>
+        </main>
             <footer>
                 <p>
                     Developed by
