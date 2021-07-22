@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;200;300;400;500;600;700&display=swap);
+:root {
+    --main-color: #ffc600;
+    --secondary-color: #241d1d;
+}
+
+* {
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-weight: 600;
+    color: var(--secondary-color);
+
+    transition: all 300ms;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-shadow: 0 0 0.1em;
+}
+
+nav {
+    margin: auto;
+    width: 50%;
+    padding: 0.5em;
+    font-size: larger;
+    border-radius: 1em;
+    text-shadow: 0 0 0.1em;
+}
+
+header,
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+main {
+    border-radius: 1em;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: reveal 1s;
+}
+
+main p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: var(--main-color);
+    text-shadow: 0 0 0.09em;
+}
+
+button {
+    margin: 3em;
+    padding: 1em;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: 0.75em;
+    font-weight: bolder;
+    border-style: hidden;
+    border-radius: 1em;
+}
+
+button:hover {
+    box-shadow: 0 0 0 0.25em #ffc8007e;
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 0.5em;
+    border-style: hidden;
+    border-radius: 0.5em;
+}
+
+a:hover {
+    box-shadow: 0 0 0 0.25em #2727276b;
+}
+
+footer {
+    padding-bottom: 0;
+}
+
+/**Menu */
+
+table {
+    background-color: var(--main-color);
+    border-radius: 0.5em;
+    padding: 1em;
+
+    box-shadow: 0 0 0 1em #ffc80077, 0 0 0 2em #ffc80031, 0 0 0 2.75em #ffc800b6;
+
+    animation: tableShadows 1s;
+}
+
+td {
+    padding: 1em;
+}
+
+.order-button {
+    margin: 0em;
+    padding: 1em;
+    background-color: #970;
+}
+
+.order-button:hover {
+    box-shadow: 0 0 0 0.35em rgba(153, 120, 0, 0.397);
+}
+
+@keyframes reveal {
+    from {
+        width: 80%;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes tableShadows {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: 0 0 0 1em #ffc80077, 0 0 0 2em #ffc80031, 0 0 0 2.75em #ffc800b6;
+    }
+}
