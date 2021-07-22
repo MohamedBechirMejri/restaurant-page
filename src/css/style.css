@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;200;300;400;500;600;700&display=swap);
 
 :root {
-    --main-color: #ffc600;
-    --secondary-color: #241d1d;
+    --main-color: #ffffffe3;
+    --secondary-color: #0099ffdc;
 }
 
 * {
@@ -83,7 +83,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 0 0 0.25em #ffc8007e;
+    box-shadow: 0 0 0 0.25em #ffffff7e;
 }
 
 a {
@@ -96,7 +96,7 @@ a {
 }
 
 a:hover {
-    box-shadow: 0 0 0 0.25em #2727276b;
+    box-shadow: 0 0 0 0.25em #0099ff36;
 }
 
 footer {
@@ -110,7 +110,7 @@ table {
     border-radius: 0.5em;
     padding: 1em;
 
-    box-shadow: 0 0 0 1em #ffc80077, 0 0 0 2em #ffc80031, 0 0 0 2.75em #ffc800b6;
+    box-shadow: 0 0 0 1em #ffffff8d, 0 0 0 2em #ffffff5d, 0 0 0 2.75em #ffffff2d;
 
     animation: tableShadows 1s;
 }
@@ -122,11 +122,11 @@ td {
 .order-button {
     margin: 0em;
     padding: 1em;
-    background-color: #970;
+    background-color: #ffffffbd;
 }
 
 .order-button:hover {
-    box-shadow: 0 0 0 0.35em rgba(153, 120, 0, 0.397);
+    box-shadow: 0 0 0 0.35em #0099ffa1;
 }
 
 @keyframes reveal {
@@ -147,6 +147,11 @@ td {
     }
 
     to {
-        box-shadow: 0 0 0 1em #ffc80077, 0 0 0 2em #ffc80031, 0 0 0 2.75em #ffc800b6;
+    box-shadow: 0 0 0 1em #ffffff8d, 0 0 0 2em #ffffff5d, 0 0 0 2.75em #ffffff2d;
     }
+}
+
+body {
+    background-image: url(../assets/img.jpg);
+    background-color: #fff;
 }
