@@ -1,3 +1,6 @@
+import { generateHomepage } from "./homepage";
+import { generateMenu } from "./menu";
+
 export const generateContactUs = () => {
   const contentDiv = document.getElementById("content");
 
@@ -5,9 +8,9 @@ export const generateContactUs = () => {
             <header>
                 <h1>Bestaurant</h1>
                 <nav>
-                    <a href="#home">Home</a>
-                    <a href="#menu">Menu</a>
-                    <a href="#contact-us">Contact US</a>
+                    <a id="home">Home</a>
+                    <a id="menu">Menu</a>
+                    <a id="contact-us">Contact US</a>
                 </nav>
             </header>
         <main>
@@ -25,4 +28,10 @@ export const generateContactUs = () => {
                     <a href="https://github.com/MohamedBechirMejri">Mohamed Bechir</a>.
                 </p>
             </footer>`;
+    document
+      .getElementById("home")
+      .addEventListener("click", () => generateHomepage());
+    document
+      .getElementById("menu")
+      .addEventListener("click", () => generateMenu());
 };

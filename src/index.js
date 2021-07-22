@@ -6,4 +6,4 @@ import { generateContactUs } from "./js/contact-us";
 
 import "./css/style.css";
 
- generateContactUs();
+ generateHomepage();
