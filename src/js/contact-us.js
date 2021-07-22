@@ -25,7 +25,7 @@ export const generateContactUs = () => {
             <footer>
                 <p>
                     Developed by
-                    <a href="https://github.com/MohamedBechirMejri">Mohamed Bechir</a>.
+                    <a href="https://github.com/MohamedBechirMejri" target="_blank">Mohamed Bechir</a>.
                 </p>
             </footer>`;
     document
