@@ -1,10 +1,14 @@
-import { generateHomepage } from "./homepage";
-import { generateMenu } from "./menu";
+import {
+    generateHomepage
+} from "./homepage";
+import {
+    generateMenu
+} from "./menu";
 
 export const generateContactUs = () => {
-  const contentDiv = document.getElementById("content");
+    const contentDiv = document.getElementById("content");
 
-  contentDiv.innerHTML = `
+    contentDiv.innerHTML = `
             <header>
                 <h1>Bestaurant</h1>
                 <nav>
@@ -29,9 +33,9 @@ export const generateContactUs = () => {
                 </p>
             </footer>`;
     document
-      .getElementById("home")
-      .addEventListener("click", () => generateHomepage());
+        .getElementById("home")
+        .addEventListener("click", () => generateHomepage());
     document
-      .getElementById("menu")
-      .addEventListener("click", () => generateMenu());
+        .getElementById("menu")
+        .addEventListener("click", () => generateMenu());
 };

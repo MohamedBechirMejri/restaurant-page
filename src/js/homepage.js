@@ -1,10 +1,14 @@
-import { generateMenu } from "./menu";
-import { generateContactUs } from "./contact-us";
+import {
+    generateMenu
+} from "./menu";
+import {
+    generateContactUs
+} from "./contact-us";
 
 export const generateHomepage = () => {
-  const contentDiv = document.getElementById("content");
+    const contentDiv = document.getElementById("content");
 
-  contentDiv.innerHTML = `
+    contentDiv.innerHTML = `
             <header>
                 <h1>Bestaurant</h1>
                 <nav>
@@ -25,13 +29,13 @@ export const generateHomepage = () => {
                     <a href="https://github.com/MohamedBechirMejri" target="_blank">Mohamed Bechir</a>.
                 </p>
             </footer>`;
-  document
-    .getElementById("check-menu")
-    .addEventListener("click", () => generateMenu());
-  document
-    .getElementById("menu")
-    .addEventListener("click", () => generateMenu());
-  document
-    .getElementById("contact-us")
-    .addEventListener("click", () => generateContactUs());
+    document
+        .getElementById("check-menu")
+        .addEventListener("click", () => generateMenu());
+    document
+        .getElementById("menu")
+        .addEventListener("click", () => generateMenu());
+    document
+        .getElementById("contact-us")
+        .addEventListener("click", () => generateContactUs());
 };
