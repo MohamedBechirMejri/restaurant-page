@@ -11,17 +11,15 @@ export const generateHomepage = () => {
             </header>
         <main>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-                accusantium quo eaque assumenda voluptates quam accusamus nemo quia aut
-                non, molestias eum omnis illo error ducimus sapiente maiores aliquid.
-                Vero.
+                Welcome To the Best Restaurant.
+                <button>Check The Menu</button>
 
             </p>
         </main>
             <footer>
                 <p>
                     Developed by
-                    <a href="https://github.com/MohamedBechirMejri">Mohamed Bechir</a>
+                    <a href="https://github.com/MohamedBechirMejri">Mohamed Bechir</a>.
                 </p>
             </footer>`;
 };
