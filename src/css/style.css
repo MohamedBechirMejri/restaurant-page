@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@100;200;300;400;500;600;700&display=swap);
+
 :root {
     --main-color: #ffc600;
-    --secondary-color: #000000;
+    --secondary-color: #241d1d;
 }
 
 * {
@@ -98,4 +100,30 @@ a:hover {
 
 footer {
     padding-bottom: 0;
+}
+
+/**Menu */
+
+table {
+    background-color: var(--main-color);
+    border-radius: 0.5em;
+    padding: 1em;
+
+    box-shadow: 0 0 0 1em #ffc80077,
+                0 0 0 2em #ffc80031,
+                0 0 0 3em #ffc800b6;
+}
+
+td {
+    padding: 1em;
+}
+
+.order-button {
+    margin: 0em;
+    padding: 1em;
+    background-color: #970;
+}
+
+.order-button:hover {
+    box-shadow: 0 0 0 0.35em rgba(153, 120, 0, 0.397);
 }
