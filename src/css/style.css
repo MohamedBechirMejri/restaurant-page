@@ -1,54 +1,101 @@
-body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    background-color: #cfbaba;
+:root {
+    --main-color: #ffc600;
+    --secondary-color: #000000;
 }
 
-header {
-    background-color: #cfbaba;
+* {
+    text-align: center;
+    font-family: "Fira Code", monospace;
+    font-weight: 600;
+    color: var(--secondary-color);
+
+    transition: all 300ms;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+}
+
+#content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em;
-    position: fixed;
-    top: 0;
-    width: 99%;
+    height: 100%;
+    width: 100%;
+}
 
-    color: aliceblue;
+h1 {
+    text-shadow: 0 0 0.1em;
+}
+
+nav {
+    margin: auto;
+    width: 50%;
+    padding: 0.5em;
+    font-size: larger;
+    border-radius: 1em;
+    text-shadow: 0 0 0.1em;
+}
+
+header,
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    padding-bottom: 1em;
 }
 
 main {
-    width: 95vw;
-    height: 75vh;
-    margin: auto;
-    margin-top: 8em;
-
-    border-radius: 2em;
-    border: solid aliceblue;
-    background-color: aliceblue;
-    box-shadow: 0 0 0.8em;
+    border-radius: 1em;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main p {
-    text-align: center;
-    margin: auto;
-    height: 80%;
-    padding: 1em;
-    color: #723636;
-    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: var(--main-color);
+    text-shadow: 0 0 0.09em;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    background-color: #cfbaba;
+button {
+    margin: 3em;
+    padding: 1em;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: 0.75em;
+    font-weight: bolder;
+    border-style: hidden;
+    border-radius: 1em;
+}
 
-    color: aliceblue;
+button:hover {
+    box-shadow: 0 0 0 0.25em #ffc8007e;
 }
 
 a {
-    color: aliceblue;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 0.5em;
+    border-style: hidden;
+    border-radius: 0.5em;
+}
+
+a:hover {
+    box-shadow: 0 0 0 0.25em #2727276b;
+}
+
+footer {
+    padding-bottom: 0;
 }
