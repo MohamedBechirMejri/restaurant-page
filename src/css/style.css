@@ -11,6 +11,7 @@
     font-weight: 600;
     color: var(--secondary-color);
 
+
     transition: all 300ms;
 }
 
@@ -58,6 +59,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: reveal 1s;
 }
 
 main p {
@@ -111,7 +113,9 @@ table {
 
     box-shadow: 0 0 0 1em #ffc80077,
                 0 0 0 2em #ffc80031,
-                0 0 0 3em #ffc800b6;
+                0 0 0 2.75em #ffc800b6;
+
+                    animation: tableShadows 1s;
 }
 
 td {
@@ -126,4 +130,25 @@ td {
 
 .order-button:hover {
     box-shadow: 0 0 0 0.35em rgba(153, 120, 0, 0.397);
+}
+
+
+
+@keyframes reveal {
+    from {
+        width: 80%;
+    opacity: 0;}
+    to {width: 100%;
+    opacity: 1;}
+
+}
+@keyframes tableShadows {
+    from {
+        box-shadow: none;
+    }
+    to {
+            box-shadow: 0 0 0 1em #ffc80077,
+                0 0 0 2em #ffc80031,
+                0 0 0 2.75em #ffc800b6;
+    }
 }
