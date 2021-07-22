@@ -1,7 +1,8 @@
 export const generateHomepage = () => {
     const contentDiv = document.getElementById("content");
 
-    contentDiv.innerHTML = `<header>
+    contentDiv.innerHTML = `
+            <header>
                 <h1>Bestaurant</h1>
                 <nav>
                     <a href="#home">Home</a>
@@ -11,8 +12,7 @@ export const generateHomepage = () => {
             </header>
         <main>
             <p>
-                Welcome To the Best Restaurant.
-                <button>Check The Menu</button>
+                Welcome To The Best Restaurant.<button>Check The Menu</button>
 
             </p>
         </main>
