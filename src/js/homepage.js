@@ -15,7 +15,7 @@ export const generateHomepage = () => {
             </header>
         <main>
             <p>
-                Welcome To The Best Restaurant.<button>Check The Menu</button>
+                Welcome To The Best Restaurant.<button id="check-menu">Check The Menu</button>
 
             </p>
         </main>
@@ -25,6 +25,9 @@ export const generateHomepage = () => {
                     <a href="https://github.com/MohamedBechirMejri" target="_blank">Mohamed Bechir</a>.
                 </p>
             </footer>`;
+  document
+    .getElementById("check-menu")
+    .addEventListener("click", () => generateMenu());
   document
     .getElementById("menu")
     .addEventListener("click", () => generateMenu());
